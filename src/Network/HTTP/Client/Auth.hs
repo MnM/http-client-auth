@@ -24,7 +24,7 @@ module Network.HTTP.Client.Auth (
     , makeRequestHeader
 
       -- * Types
-    , Challenge
+    , Challenge (..)
 
       -- * Low-level functions
     , extractAuthHeader
