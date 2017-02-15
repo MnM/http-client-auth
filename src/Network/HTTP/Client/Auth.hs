@@ -453,7 +453,7 @@ requestWithAuth
   -> Request -- ^ request to send (without authorization)
   -> MaybeT IO (Response body)
 requestWithAuth login password query req = do
-    let safeReq = req {checkStatus = \_ _ _ -> Nothing}
+    let safeReq = req {checkResponse = \_ _ -> pure ()}
     resp <- lift $ query safeReq
     Just challenge <- return $ getChallenge resp
     let repeatReq = do
