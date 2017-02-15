@@ -1,0 +1,9 @@
+resolver: lts-8.0
+packages:
+  # Note: a pull request has been submitted with the necessary changes to the
+  # library dependencies upper bounds. Update to Hackage version 0.5.6 when
+  # it's available!
+  - location:
+      git: https://github.com/MnM/crypto-conduit
+      commit: aab9da789de3b4f1e2c0b08b643bef1fb94c432a
+  - '.'

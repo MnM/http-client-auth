@@ -7,3 +7,4 @@ dist/
 codex.tags
 *.swo
 TAGS
+.stack-work
