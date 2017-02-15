@@ -51,8 +51,8 @@ test-suite doctest
   main-is:          DocTest.hs
   type:             exitcode-stdio-1.0
   build-depends:    base
-                  , doctest == 0.9.*
-                  , Glob    == 0.7.*
+                  , doctest >= 0.9
+                  , Glob    >= 0.7
 
 
 
@@ -76,5 +76,5 @@ test-suite hlint
     type:             exitcode-stdio-1.0
     default-language: Haskell2010
     build-depends:    base
-                    , hlint == 1.8.*
+                    , hlint >= 1.8
                     , directory
